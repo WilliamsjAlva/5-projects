@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Venezuela: Ve series online, ve películas online</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="resources/img/Netflix_icon.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+    <nav
+        class="w-full h-16 bg-gradient-to-b from-black to-transparent flex justify-between items-center px-4 absolute top-0 left-0 z-10">
+        <div>
+            <img src="resources/img/Netflix_logo.webp" alt="" class="h-24 max-[959px]:h-16">
+        </div>
+        <div class="flex justify-center items-center gap-2">
+            <div class="relative max-[600px]:w-16 max-[600px]:h-8 rounded-lg bg-transparent appearance-none w-28 h-8">
+                <div
+                    class="flex justify-center items-center h-full w-full absolute pointer-events-none space gap-1 max-[600px]:gap-3">
+                    <img src="resources/img/language-icon.png" alt="" class="h-[1.2rem] pointer-events-none">
+                    <span class="hidden text-white min-[600px]:flex">Español</span>
+                    <img src="resources/img/down-arrow.png" alt="" class="h-[0.5rem] z-10 pointer-events-none">
+                </div>
+                <select name="" id="custom-select"
+                    class="h-full w-full bg-transparent z-20 appearance-none pl-2 pr-8 text-transparent custom-select border-gray-500 focus:border-red-500">
+                    <option value="" class="text-black">Español</option>
+                    <option value="" class="text-black">Inglés</option>
+                </select>
+            </div>
+            <a href=""
+                class="w-28 h-8 ease-in duration-300 flex justify-center items-center bg-[#E50914] hover:bg-[#C11119] rounded-lg hover:no-underline">
+                <p class="text-sm font-medium text-white">
+                    Iniciar sesión
+                </p>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <div
+            class="w-full md:w-auto flex flex-col items-center justify-center text-center h-screen relative bg-local-image-fondo bg-cover bg-center text-white">
+            <div>
+                <div>
+                    <h1 class="text-3xl font-bold min-[960px]:text-5xl">
+                        Películas y series ilimitadas y mucho más
+                    </h1>
+                </div>
+                <p class="text-lg font-medium m-4">
+                    Disfruta donde quieras. Cancela cuando quieras.
+                </p>
+                <p class="text-lg font-medium m-4">
+                    ¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.
+                </p>
+            </div>
+            <form action="" class="flex max-[599px]:flex-col items-center min-[599px]:flex">
+                <div class="relative max-[599px]:m-4 min-[599px]:m-2">
+                    <input type="text" id="floating_outlined"
+                        class="block px-2.5 pb-2.5 pt-4 text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 peer h-12 w-80 focus:border-red-600"
+                        placeholder="" />
+                    <label for="floating_outlined"
+                        class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-transparent dark:bg-gray-900 px-2 peer-focus:px-2 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-1 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Email</label>
+                </div>
+                <button type="submit" name="comenzar"
+                    class="w-32 h-12 ease-in duration-300 flex justify-center items-center bg-[#E50914] hover:bg-[#C11119] rounded-lg">
+                    <span class="font-semibold">Comenzar</span>
+                    <img src="resources/img/right-arrow.png" alt="" class="h-3 ml-2 mt-1">
+                </button>
+            </form>
+        </div>
+        <!-- Linea divisora -->
+        <div class="h-2 bg-[#232323]">
+        </div>
+        <!-- Disfruta en tu TV -->
+        <section
+            class="w-full md:w-auto flex max-[599px]:flex-col min[600px]:flex items-center text-center h-screen relative bg-black bg-cover bg-center text-white">
+            <div class="mt-11">
+                <h1 class="text-3xl font-bold min-[960px]:text-6xl">
+                    Disfruta en tu TV
+                </h1>
+                <p class="text-lg font-medium m-4">
+                    Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.
+                </p>
+            </div>
+            <div class="flex justify-center items-center">
+                <video src="resources/videos/video-tv.m4v" autoplay loop muted
+                    class="absolute max-[599px]:h-48 max-[599px]:mb-4 min-[599px]:h-56 min-[599px]:mb-6"></video>
+                <img src="resources/img/tv.png" alt="" class="z-10">
+            </div> <!-- asi es -->
+        </section>
+        <!-- Linea divisora -->
+        <div class="h-2 bg-[#232323]">
+        </div>
+        <section
+            class="w-full md:w-auto flex max-[599px]:flex-col min[600px]:flex items-center text-center h-screen relative bg-black bg-cover bg-center text-white">
+            <div class="mt-11">
+                <h1 class="text-3xl font-bold m-2 min-[960px]:text-6xl">
+                    Descarga tus series para verlas offline
+                </h1>
+                <p class="text-lg font-medium m-4">
+                    Guarda tu contenido favorito y tendrás siempre algo para ver.
+                </p>
+            </div>
+            <div class="flex justify-center items-center">
+                <img src="resources/img/mobile-1.jpg" alt="">
+                <div
+                    class="absolute bg-black h-16 w-64 flex justify-center items-center border-gray-600 border-2 rounded-xl top-[30rem]">
+                    <div class="">
+                        <img src="resources/img/cosas-extranas.png" alt="" class="h-12">
+                    </div>
+                    <div class="mr-9 ml-2">
+                        <p class="font-medium">Stranger Things</p>
+                        <p class="text-blue-600 text-xs ">
+                            Descargando...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    </div>
+                    <div class="custom-loader"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Linea divisora-->
+        <div class="h-2 bg-[#232323]">
+        </div>
+        <section
+            class="w-full md:w-auto flex max-[599px]:flex-col min[600px]:flex items-center text-center h-screen relative bg-black bg-cover bg-center text-white">
+            <div class="mt-11">
+                <h1 class="text-3xl font-bold min-[960px]:text-6xl">
+                    Disfruta donde quieras
+                </h1>
+                <p class="text-lg font-medium m-4">
+                    Películas y series ilimitadas en tu teléfono, tablet, laptop y TV.
+                </p>
+            </div>
+            <div class="flex justify-center items-center">
+                <video src="resources/videos/video-devices.m4v" autoplay loop muted
+                    class="absolute max-[599px]:h-40 max-[599px]:mb-20 min-[599px]:h-48 min-[599px]:mb-24"></video>
+                <img src="resources/img/device-pile.png" alt="" class="z-10">
+            </div>
+        </section>
+        <!-- Linea divisora-->
+        <div class="h-2 bg-[#232323]">
+        </div>
+        <section
+            class="w-full md:w-auto flex max-[599px]:flex-col min[600px]:flex items-center text-center h-screen relative bg-black bg-cover bg-center text-white">
+            <div class="mt-11">
+                <h1 class="text-3xl font-bold min-[960px]:text-6xl">
+                    Crea perfiles para niños
+                </h1>
+                <p class="text-lg font-medium m-4">
+                    Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para
+                    ellos, sin costo con tu membresía.
+                </p>
+            </div>
+            <div class="flex justify-center items-center">
+                <img src="resources/img/kids.png" alt="">
+            </div>
+        </section>
+        <!-- Linea divisora-->
+        <div class="h-2 bg-[#232323]">
+        </div>
+        <section class="w-full flex flex-col items-center h-auto relative bg-black bg-cover bg-center text-white">
+            <div class="m-8">
+                <h1 class="text-4xl font-bold">
+                    Preguntas frecuentes
+                </h1>
+            </div>
+            <section class="w-[90%]">
+                <details class="bg-[#2D2D2D] font-medium transition-all duration-500">
+                    <summary class="p-[20px] cursor-pointer custom-summary hover:bg-[#414141] transition ease-in list-none">¿Qué
+                        es Netflix?</summary>
+                    <p class="p-4">Netflix es un servicio de streaming que ofrece una gran variedad de películas, series
+                        y documentales premiados en casi cualquier pantalla conectada a internet.</p>
+                    <p class="p-4">
+                        Todo lo que quieras ver, sin límites ni comerciales, a un costo muy accesible. Siempre hay algo
+                        nuevo por descubrir, ¡y todas las semanas se agregan más películas y series!
+                    </p>
+                </details>
+
+                <details class="bg-[#2D2D2D] font-medium transition-all duration-500">
+                    <summary class="p-[20px] cursor-pointer custom-summary hover:bg-[#414141] transition ease-in list-none">
+                        ¿Cuánto cuesta Netflix?</summary>
+                    <p class="p-4">Disfruta Netflix en tu smartphone, tablet, smart TV, laptop o dispositivo de
+                        streaming, todo por una tarifa plana mensual. Planes desde USD 3,99 hasta USD 7,99 al mes. Sin
+                        costos adicionales ni contratos.</p>
+                </details>
+                <details class="bg-[#2D2D2D] font-medium transition-all duration-500">
+                    <summary class="p-[20px] cursor-pointer custom-summary hover:bg-[#414141] transition ease-in list-none">¿Dónde
+                        puedo ver Netflix?</summary>
+                    <p class="p-4">Disfruta donde quieras, cuando quieras. Inicia sesión en tu cuenta de Netflix para
+                        ver contenido al instante a través de netflix.com desde tu computadora personal o en cualquier
+                        dispositivo con conexión a internet que cuente con la app de Netflix, como smart TV,
+                        smartphones, tablets, reproductores multimedia y consolas de juegos.</p>
+                    <p class="p-4">
+                        Además, puedes descargar tus series favoritas con la app para iOS o Android. Con la función de
+                        descarga, puedes ver contenido donde vayas y sin conexión a internet. Lleva Netflix contigo
+                        adonde sea.
+                    </p>
+                </details>
+                <details class="bg-[#2D2D2D] font-medium transition-all duration-500">
+                    <summary class="p-[20px] cursor-pointer custom-summary hover:bg-[#414141] transition ease-in list-none">¿Cómo
+                        cancelo?</summary>
+                    <p class="p-4">Netflix es flexible. Sin contratos molestos ni compromisos. Cancela la membresía
+                        online con solo dos clics. No hay cargos por cancelación. Empieza y termina cuando quieras.</p>
+                </details>
+                <details class="bg-[#2D2D2D] font-medium transition-all duration-500">
+                    <summary class="p-[20px] cursor-pointer custom-summary hover:bg-[#414141] transition ease-in list-none">¿Qué
+                        puedo ver en Netflix?</summary>
+                    <p class="p-4">Netflix tiene un amplio catálogo de películas, series, documentales, animes,
+                        originales premiados y más. Todo lo que quieras ver, cuando quieras.
+                    </p>
+                </details>
+                <details class="bg-[#2D2D2D] font-medium transition-all duration-500">
+                    <summary class="p-[20px] cursor-pointer custom-summary hover:bg-[#414141] transition ease-in list-none">¿Es
+                        bueno Netflix para los niños?</summary>
+                    <p class="p-4">La experiencia de Netflix para niños está incluida en la membresía para que los
+                        padres tengan el control mientras los peques disfrutan series y películas familiares en su
+                        propio espacio.</p>
+                    <p class="p-4">
+                        Los perfiles para niños incluyen controles parentales protegidos por PIN que te permiten
+                        restringir el contenido que pueden ver los niños en función de la clasificación por edad y
+                        bloquear determinados títulos que no quieras que los niños vean.
+                    </p>
+                </details>
+            </section>
+            <div class="m-4 justify-center items-center text-center">
+                <p class="text-lg font-medium m-4">
+                    ¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.
+                </p>
+            </div>
+            <form action="" class="flex max-[599px]:flex-col items-center mb-4 min-[599px]:flex">
+                <div class="relative max-[599px]:m-4 min-[599px]:m-2">
+                    <input type="text" id="floating_outlined"
+                        class="block px-2.5 pb-2.5 pt-4 text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 peer h-12 w-80 focus:border-red-600"
+                        placeholder="" />
+                    <label for="floating_outlined"
+                        class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-transparent dark:bg-gray-900 px-2 peer-focus:px-2 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-1 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Email</label>
+                </div>
+                <button type="submit" name="comenzar"
+                    class="w-32 h-12 ease-in duration-300 flex justify-center items-center bg-[#E50914] hover:bg-[#C11119] rounded-lg">
+                    <span class="font-semibold">Comenzar</span>
+                    <img src="resources/img/right-arrow.png" alt="" class="h-3 ml-2 mt-1">
+                </button>
+            </form>
+        </section>
+        <!-- Linea divisora-->
+        <div class="h-2 bg-[#232323]">
+        </div>
+        <section class="bg-black flex justify-center flex-col py-10">
+            <div class="text-[#B3B3B3] flex justify-center mb-4">
+                <p>
+                    ¿Preguntas? Llama al <span>
+                        <a href="tel: 1 (408) 469-4467  (USA)" class="hover:text-red-500">
+                            1 (408) 469-4467 (USA)
+                        </a>
+                    </span>
+                </p>
+            </div>
+            <div class="flex flex-wrap justify-center max-w-5xl mx-auto">
+                <div class="w-full sm:w-1/3 px-4 mb-4">
+                    <ul class="flex flex-col text-[#B3B3B3] space-y-2">
+                        <li><a href="" class="hover:text-red-500">Preguntas frecuentes</a></li>
+                        <li><a href="" class="hover:text-red-500">Relaciones con inversionistas</a></li>
+                        <li><a href="" class="hover:text-red-500">Privacidad</a></li>
+                        <li><a href="" class="hover:text-red-500">Prueba de velocidad</a></li>
+                        <li><a href="" class="hover:text-red-500">Centro de ayuda</a></li>
+                        <li>
+                            <div
+                                class="relative max-[600px]:w-16 max-[600px]:h-8 rounded-lg bg-transparent appearance-none w-28 h-8 hidden min-[600px]:grid">
+                                <div
+                                    class="flex justify-center items-center h-full w-full absolute pointer-events-none space gap-1 max-[600px]:gap-3">
+                                    <img src="resources/img/language-icon.png" alt=""
+                                        class="h-[1.2rem] pointer-events-none">
+                                    <span class="hidden text-white min-[600px]:flex">Español</span>
+                                    <img src="resources/img/down-arrow.png" alt=""
+                                        class="h-[0.5rem] z-10 pointer-events-none">
+                                </div>
+                                <select name="" id="custom-select"
+                                    class="h-full w-full bg-transparent z-20 appearance-none pl-2 pr-8 text-transparent custom-select border-gray-500 focus:border-red-500">
+                                    <option value="" class="text-black">Español</option>
+                                    <option value="" class="text-black">Inglés</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full sm:w-1/3 px-4 mb-4">
+                    <ul class="flex flex-col text-[#B3B3B3] space-y-2">
+                        <li><a href="" class="hover:text-red-500">Empleo</a></li>
+                        <li><a href="" class="hover:text-red-500">Preferencias de cookies</a></li>
+                        <li><a href="" class="hover:text-red-500">Avisos legales</a></li>
+                        <li><a href="" class="hover:text-red-500">Cuenta</a></li>
+                        <li><a href="" class="hover:text-red-500">Formas de ver</a></li>
+                    </ul>
+                </div>
+                <div class="w-full sm:w-1/3 px-4 mb-4">
+                    <ul class="flex flex-col text-[#B3B3B3] space-y-2">
+                        <li><a href="" class="hover:text-red-500">Información corporativa</a></li>
+                        <li><a href="" class="hover:text-red-500">Solo en Netflix</a></li>
+                        <li><a href="" class="hover:text-red-500">Prensa</a></li>
+                        <li><a href="" class="hover:text-red-500">Términos de uso</a></li>
+                        <li><a href="" class="hover:text-red-500">Contáctanos</a></li>
+                        <li>
+                            <div
+                                class="relative max-[600px]:w-16 max-[600px]:h-8 rounded-lg bg-transparent appearance-none w-28 h-8 min-[640px]:hidden">
+                                <div
+                                    class="flex justify-center items-center h-full w-full absolute pointer-events-none space gap-1 max-[600px]:gap-3">
+                                    <img src="resources/img/language-icon.png" alt=""
+                                        class="h-[1.2rem] pointer-events-none">
+                                    <span class="hidden text-white min-[600px]:flex">Español</span>
+                                    <img src="resources/img/down-arrow.png" alt=""
+                                        class="h-[0.5rem] z-10 pointer-events-none">
+                                </div>
+                                <select name="" id="custom-select"
+                                    class="h-full w-full bg-transparent z-20 appearance-none pl-2 pr-8 text-transparent custom-select border-gray-500 focus:border-red-500">
+                                    <option value="" class="text-black">Español</option>
+                                    <option value="" class="text-black">Inglés</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- scripts -->
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- /scripts -->
+
+</body>
+
+</html>

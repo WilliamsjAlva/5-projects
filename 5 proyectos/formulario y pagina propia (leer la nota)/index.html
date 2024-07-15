@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cave Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="shortcut icon" href="resources/img/blackstone.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/pixelcraft-2" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<style>
+    @import url('https://fonts.cdnfonts.com/css/minecraft-3');
+    @import url('https://fonts.cdnfonts.com/css/minecraft-4');
+    @import url('https://fonts.cdnfonts.com/css/pixelcraft-2');
+</style>
+
+<body class="overflow-x-hidden">
+    <nav class="w-full h-14 bg-[#1a1a1a] flex place-content-between items-center sticky top-0 z-[3]">
+        <a href="index.html" class="flex items-center ml-4">
+            <img src="resources/img/blackstone.webp" alt="" class="w-10">
+            <p class="text-2xl ml-2 mc-title1 text-white">
+                Cave Game
+            </p>
+        </a>
+        <section class="flex gap-4 mr-8">
+            <a href="signup.html"
+                class="w-20 h-10 mc-text cursor-pointer flex items-center justify-center border-t-gray-300 border-l-gray-300 border-b-gray-600 border-r-gray-600 text-white border-4 active:border-t-gray-600 active:border-l-gray-600 active:border-b-gray-300 active:border-r-gray-300"
+                id="signup">
+                <p class="pb-2">Sign up</p>
+            </a>
+            <a href="login.html"
+                class="w-20 h-10 mc-text cursor-pointer flex items-center justify-center border-t-gray-300 border-l-gray-300 border-b-gray-600 border-r-gray-600 text-white border-4 active:border-t-gray-600 active:border-l-gray-600 active:border-b-gray-300 active:border-r-gray-300"
+                id="login">
+                <p class="pb-2">Login</p>
+            </a>
+        </section>
+    </nav>
+    <main
+        class="w-full md:w-auto flex flex-col items-center justify-center text-center h-screen relative bg-local-image-key-art bg-cover bg-center">
+        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+        <div class="relative z-1 flex items-center max-[949px]:flex-col">
+            <div>
+                <div>
+                    <p class="text-6xl text-white mc-title1 m-2">
+                        Discover Cave Game
+                    </p>
+                </div>
+                <div>
+                    <p class="text-white mc-text m-4">
+                        <span class="text-amber-600">Cave Game</span> is a game made up of <span
+                            class="text-green-500">blocks</span>, <span class="text-purple-400">creatures</span> and
+                        <span class="text-yellow-500">communities</span>.
+                        The <span class="text-green-500">blocks</span> can be used to
+                        <span class="text-gray-400">redesign</span> the <span class="text-blue-500">world</span> or
+                        build <span class="text-yellow-500">fantastic</span> <span
+                            class="text-cyan-400">creations</span>.
+                    </p>
+                </div>
+            </div>
+            <div class="m-5">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NG-5L34HqOs?si=puC6jeaKjU1O48WB"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                    class="max-[670px]:h-60 max-[670px]:w-80"></iframe>
+            </div>
+        </div>
+    </main>
+    <!-- Linea divisora-->
+    <div class="h-4 w-full m-0 bg-[#232323]">
+    </div>
+    <section
+        class="w-full h-screen bg-black flex flex-col min-[760px]:flex min-[760px]:flex-row gap-6 justify-center items-center text-center text-white p-4">
+        <div class="mt-8">
+            <img src="resources/img/steve-alex.png" alt="" class="min-[760px]:h-[15rem]">
+        </div>
+        <div class="w-72 justify-center items-center grid">
+            <h1 class="mc-title1 text-3xl min-[980px]:text-5xl">Experience <span class="text-yellow-400">epic</span>
+                adventures,</h1>
+            <p class="mc-text"> playing <span class="text-lime-500">alone</span> or <span class="text-purple-600">with
+                    friends</span>, both options are valid. <span class="text-gray-400">(Unless you're digging
+                    deep.)</span></p>
+        </div>
+    </section>
+    <!-- Linea divisora-->
+    <div class="h-4 w-full m-0 bg-[#232323]">
+    </div>
+    <section
+        class="w-full h-screen bg-black flex flex-col min-[760px]:flex min-[760px]:flex-row gap-6 justify-center items-center text-center text-white p-4">
+        <div class="w-72 justify-center items-center grid min-[760px]:mr-10">
+            <h1 class="mc-title1 text-3xl min-[980px]:text-5xl">Exploration game modes</h1>
+            <p class="mc-text"><span class="text-amber-600">Cave Game</span> allows you to play the way <span
+                    class="text-cyan-500">you want</span>, whether to express your <span
+                    class="text-red-400">creativity</span> or to <span class="text-red-600">fight</span> <span
+                    class="text-green-600">creepers</span> and survive the night.</p>
+        </div>
+        <div class="mt-8">
+            <img src="resources/img/cave.png" alt="" class="min-[760px]:h-[22rem]">
+        </div>
+    </section>
+    <!-- Linea divisora-->
+    <div class="h-4 w-full m-0 bg-[#232323]">
+    </div>
+    <section
+    class="w-full h-screen bg-black flex flex-col min-[760px]:flex min-[760px]:flex-row gap-6 justify-center items-center text-center text-white p-4">
+    <div class="w-72 justify-center items-center grid">
+        <h1 class="mc-title1 text-3xl min-[980px]:text-5xl">TSSSSSS....</h1>
+        <p class="mc-text">(Sign up here and start playing <span class="text-amber-600">Cave Game</span>)</p>
+        <div class="relative left-24 top-8">
+            <a href="signup.html"
+            class="w-20 h-10 mc-text cursor-pointer flex items-center justify-center border-t-lime-500 border-l-lime-500 border-b-lime-700 border-r-lime-700 text-white border-4 active:border-t-lime-700 active:border-l-lime-700 active:border-b-lime-500 active:border-r-lime-500 bg-lime-600">
+            <p class="pb-2">Sign up</p>
+        </a>
+        </div>
+    </div>
+    <div class="mt-8">
+        <img src="resources/img/creeper.png" alt="" class="min-[760px]:h-[22rem] h-[15rem]">
+    </div>
+</section>
+    <!-- Linea divisora-->
+    <div class="h-4 w-full m-0 bg-[#232323]">
+    </div>
+<footer class="w-full h-24 bg-gray-950 text-white text-xs flex justify-center items-center p-4">
+    <div class="flex gap-4">
+        <a href="">
+            <p>
+                Privacy and cookies
+            </p>
+        </a>
+        <a href="">
+            <p>
+                Terms of use
+            </p>
+        </a>
+        <a href="">
+            <p>
+                Trademarks
+            </p>
+        </a>
+        <a>
+            <p>
+                © 2024 Macrorough
+            </p>
+        </a>
+    </div>
+    <div class="m-4">
+        <a href="" class="">
+            <img src="resources/img/macrorough-logo.png" alt="" class="hidden h-10 min-[590px]:flex">
+        </a>
+    </div>
+    
+    </footer>
+    </body>
+    </html>

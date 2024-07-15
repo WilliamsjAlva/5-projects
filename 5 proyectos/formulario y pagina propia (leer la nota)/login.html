@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cave Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="shortcut icon" href="resources/img/blackstone.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/pixelcraft-2" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<style>
+    @import url('https://fonts.cdnfonts.com/css/minecraft-3');
+    @import url('https://fonts.cdnfonts.com/css/minecraft-4');
+    @import url('https://fonts.cdnfonts.com/css/pixelcraft-2');
+</style>
+<body>
+    <nav class="w-full h-14 bg-[#1A1A1A] flex place-content-between items-center sticky top-0 z-[3]">
+        <a href="index.html" class="flex items-center ml-4">
+            <img src="resources/img/blackstone.webp" alt="" class="w-10">
+            <p class="text-2xl ml-2 mc-title1 text-white">
+                Cave Game
+            </p>
+        </a>
+        <section class="flex gap-4 mr-8">
+            <a href="signup.html" class="w-20 h-10 mc-text cursor-pointer flex items-center justify-center border-t-gray-300 border-l-gray-300 border-b-gray-600 border-r-gray-600 text-white border-4 active:border-t-gray-600 active:border-l-gray-600 active:border-b-gray-300 active:border-r-gray-300" id="signup"><p class="pb-2">Sign up</p></a>
+            <a href="login.html" class="w-20 h-10 mc-text cursor-pointer flex items-center justify-center border-t-gray-300 border-l-gray-300 border-b-gray-600 border-r-gray-600 text-white border-4 active:border-t-gray-600 active:border-l-gray-600 active:border-b-gray-300 active:border-r-gray-300" id="login"><p class="pb-2">Login</p></a>
+        </section>
+    </nav>
+</body>
+    <main
+        class="w-full md:w-auto flex flex-col items-center justify-center text-center h-screen relative bg-local-image-buzzy-bees bg-cover bg-center">
+        <div
+            class="h-64 mt-9 md:h-auto w-full md:w-96 mb-6 md:mb-0 md:mr-6 flex justify-center items-center md:flex-col">
+            <p class="text-4xl text-center mc-title1 md:text-left text-white">
+                It's good to meet you again
+            </p>
+        </div>
+        <form form class="row g-3 needs-validation mt-10 min-[778px]: w-6/12 text-start">
+            <label for="email" class="mc-text-bold text-white">E-mail or Username</label>
+            <input type="text" name="email" id="email" class="p-1" placeholder="Ex.: name@email.com">
+            <label for="password" class="mc-text-bold text-white">Password</label>
+            <input type="password" name="password" id="password" class="p-1" placeholder="Password">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label mc-text text-white" for="flexCheckDefault">
+                    Stay loged in.
+                </label>
+            </div>
+            <div class="col-12 mt-2">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+            <div>
+                <p class="mc-text text-white">
+                    New user? Please sign up <a href="signup.html" class="underline text-green-600">Here</a>
+                </p>
+            </div>
+        </form>
+        <footer class="w-full h-20 bg-gray-950 text-white text-xs flex justify-center items-center p-4 mt-auto">
+            <div class="flex gap-4">
+                <a href="">
+                    <p>
+                        Privacy and cookies
+                    </p>
+                </a>
+                <a href="">
+                    <p>
+                        Terms of use
+                    </p>
+                </a>
+                <a href="">
+                    <p>
+                        Trademarks
+                    </p>
+                </a>
+                <a>
+                    <p>
+                        © 2024 Macrorough
+                    </p>
+                </a>
+            </div>
+            <div class="m-4">
+                <a href="" class="">
+                    <img src="resources/img/macrorough-logo.png" alt="" class="hidden h-10 min-[590px]:flex">
+                </a>
+            </div>
+            
+            </footer>
+</html>

@@ -1,0 +1,27 @@
+.bg-local-people{
+    background: 
+        linear-gradient(98deg, 
+            rgba(0, 156, 222, 0.8), 
+            rgba(0, 156, 222, 0.8) 50%, 
+            rgba(0, 48, 135, 0.8) 50%, 
+            rgba(0, 48, 135, 0.8)
+        ),
+        url('../resources/img/people.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.dotted-hr {
+    border: none;
+    height: 1px;
+    background: repeating-linear-gradient(90deg, #cccccc, #cccccc 2px, transparent 2px, transparent 4px
+    );
+}
+
+body.barra-x-oculta {
+    overflow-x: hidden;
+}
+
+.sombra-izq {
+    box-shadow: -10px 0 15px -10px rgba(0, 0, 0, 0.3);
+}

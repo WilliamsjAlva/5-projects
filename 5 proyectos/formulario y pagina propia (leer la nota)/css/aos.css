@@ -1,0 +1,40 @@
+/*!
+ * AOS - Animate on scroll library
+ * 2.3.1
+ * https://michalsnik.github.io/aos/
+ * Licensed under the MIT License
+ */
+ [data-aos] {
+    opacity: 0;
+    transition-property: transform, opacity;
+  }
+  
+  [data-aos].aos-animate {
+    opacity: 1;
+  }
+  
+  [data-aos^=fade][data-aos^=fade].aos-animate {
+    opacity: 1;
+  }
+  
+  [data-aos=fade] {
+    opacity: 0;
+    transition-timing-function: ease-out;
+  }
+  
+  [data-aos=fade].aos-animate {
+    opacity: 1;
+  }
+  
+  [data-aos=fade-down] {
+    transform: translate3d(0, -50px, 0);
+    transition-timing-function: ease-out;
+  }
+  
+  [data-aos=fade-down].aos-animate {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  
+  /* Add more animations if needed */
+  

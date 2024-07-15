@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#login{
+    background-color: #717171;
+}
+
+#signup{
+    background-color: #717171;
+}
+
+#down-arrow{
+    --animate-duration: 9s
+}
+
+.mc-title1{
+    font-family: 'Minecraft', sans-serif
+}
+
+.mc-text{
+    font-family: 'PixelCraft', sans-serif;
+}
+
+.mc-text-bold{
+    font-family: 'PixelCraft Bold', sans-serif;
+}
+
+.mc-text-bold-wide{
+    font-family: 'PixelCraft Bold Wide', sans-serif;
+}
+
+.bg-local-image-tricky-trials {
+    background-image: url('../resources/background/tricky-trials/wallpaper_minecraft_trickytrials_1920x1080.png');
+}
+
+.bg-local-image-nether {
+    background: linear-gradient(to bottom, black, transparent), url('../resources/background/nether/wallpaper_minecraft_nether_update_1920x1080.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-local-image-key-art{
+    background: url('../resources/background/principal-page/key-art.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-local-image-buzzy-bees{
+    background: linear-gradient(to bottom, transparent,transparent, black),url('../resources/background/buzzy-bees/wallpaper_minecraft_buzzybees_1920x1080.png');
+    background-size: cover;
+    background-position: center;
+}
+
+main{
+    width: 100vh;
+    height: 100vh;
+}
+
+input{
+    border-radius: 2px;
+}
+
+select{
+    border-radius: 2px;
+}

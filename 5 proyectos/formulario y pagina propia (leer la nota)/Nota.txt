@@ -1,0 +1,4 @@
+Aquí se encuentran tanto el proyecto del login como el de la página propia
+Añadí cosas extra como una página para iniciar sesión, y espero también añadir una página de términos y
+condiciones (Spoiler: no pude)
+Como curiosidad, Cave Game iba a ser el nombre original del juego que hoy en día se conoce como Minecraft
