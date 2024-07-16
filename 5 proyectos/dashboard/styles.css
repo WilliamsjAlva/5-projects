@@ -1,0 +1,13 @@
+#menuToggle:checked+.menu-content {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    #menuToggle {
+        display: none;
+    }
+
+    .menu-content {
+        display: block !important;
+    }
+}

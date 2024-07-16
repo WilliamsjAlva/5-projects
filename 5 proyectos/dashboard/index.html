@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas.es Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+    <div class="min-h-screen flex flex-col md:flex-row">
+
+        <aside class="bg-blue-500 w-full md:w-64 h-full md:h-auto p-6 flex flex-col justify-between">
+            <div>
+                <h2 class="text-2xl text-white font-bold mb-6 flex cursor-pointer">
+                    Ventas.es
+                    <span>
+                        <img src="resources/img/hands.png" alt="" class="h-7 mt-2 ml-1">
+                    </span>
+                </h2>
+                <nav>
+                    <a href="#" class="flex py-2.5 px-4 text-white rounded transition duration-200 hover:bg-blue-400">
+                        <span>
+                            <svg width="1.5rem" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.918 10.0005H7.082C6.66587 9.99708 6.26541 10.1591 5.96873 10.4509C5.67204 10.7427 5.50343 11.1404 5.5 11.5565V17.4455C5.5077 18.3117 6.21584 19.0078 7.082 19.0005H9.918C10.3341 19.004 10.7346 18.842 11.0313 18.5502C11.328 18.2584 11.4966 17.8607 11.5 17.4445V11.5565C11.4966 11.1404 11.328 10.7427 11.0313 10.4509C10.7346 10.1591 10.3341 9.99708 9.918 10.0005Z"
+                                        stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.918 4.0006H7.082C6.23326 3.97706 5.52559 4.64492 5.5 5.4936V6.5076C5.52559 7.35629 6.23326 8.02415 7.082 8.0006H9.918C10.7667 8.02415 11.4744 7.35629 11.5 6.5076V5.4936C11.4744 4.64492 10.7667 3.97706 9.918 4.0006Z"
+                                        stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15.082 13.0007H17.917C18.3333 13.0044 18.734 12.8425 19.0309 12.5507C19.3278 12.2588 19.4966 11.861 19.5 11.4447V5.55666C19.4966 5.14054 19.328 4.74282 19.0313 4.45101C18.7346 4.1592 18.3341 3.9972 17.918 4.00066H15.082C14.6659 3.9972 14.2654 4.1592 13.9687 4.45101C13.672 4.74282 13.5034 5.14054 13.5 5.55666V11.4447C13.5034 11.8608 13.672 12.2585 13.9687 12.5503C14.2654 12.8421 14.6659 13.0041 15.082 13.0007Z"
+                                        stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15.082 19.0006H17.917C18.7661 19.0247 19.4744 18.3567 19.5 17.5076V16.4936C19.4744 15.6449 18.7667 14.9771 17.918 15.0006H15.082C14.2333 14.9771 13.5256 15.6449 13.5 16.4936V17.5066C13.525 18.3557 14.2329 19.0241 15.082 19.0006Z"
+                                        stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </g>
+                            </svg>
+                        </span>
+                        Dashboard
+                    </a>
+                    <a href="#" class="flex py-2.5 px-4 text-white rounded transition duration-200 hover:bg-blue-400">
+                        <span>
+                            <svg width="1.5rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+                                    class="mr-1"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M20.2236 12.5257C19.6384 9.40452 19.3458 7.84393 18.2349 6.92196C17.124 6 15.5362 6 12.3606 6H11.6394C8.46386 6 6.87608 6 5.76518 6.92196C4.65428 7.84393 4.36167 9.40452 3.77645 12.5257C2.95353 16.9146 2.54207 19.1091 3.74169 20.5545C4.94131 22 7.17402 22 11.6394 22H12.3606C16.826 22 19.0587 22 20.2584 20.5545C20.9543 19.7159 21.108 18.6252 20.9537 17"
+                                        stroke="#000" stroke-width="1.5" stroke-linecap="round"></path>
+                                    <path d="M9 6V5C9 3.34315 10.3431 2 12 2C13.6569 2 15 3.34315 15 5V6" stroke="#000"
+                                        stroke-width="1.5" stroke-linecap="round"></path>
+                                </g>
+                            </svg>
+                        </span>
+                        Productos
+                    </a>
+                    <a href="#" class="flex py-2.5 px-4 text-white rounded transition duration-200 hover:bg-blue-400">
+                        <span>
+                            <svg width="1.5rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0" class="mr-1"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M3 7L6 4H9C9 4.39397 9.0776 4.78407 9.22836 5.14805C9.37913 5.51203 9.6001 5.84274 9.87868 6.12132C10.1573 6.3999 10.488 6.62087 10.8519 6.77164C11.2159 6.9224 11.606 7 12 7C12.394 7 12.7841 6.9224 13.1481 6.77164C13.512 6.62087 13.8427 6.3999 14.1213 6.12132C14.3999 5.84274 14.6209 5.51203 14.7716 5.14805C14.9224 4.78407 15 4.39397 15 4H18L21 7L20.5785 11.2152C20.542 11.5801 20.1382 11.7829 19.8237 11.5942L18 10.5V18C18 19.1046 17.1046 20 16 20H8C6.89543 20 6 19.1046 6 18V10.5L4.17629 11.5942C3.86184 11.7829 3.45801 11.5801 3.42152 11.2152L3 7Z"
+                                        stroke="#010005" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </g>
+                            </svg>
+                        </span>
+                        Pedidos
+                    </a>
+                    <a href="#" class="flex py-2.5 px-4 text-white rounded transition duration-200 hover:bg-blue-400">
+                        <span>
+                            <img src="resources/img/people.png" alt="" class="h-6 mr-1">
+                        </span>
+                        Clientes
+                    </a>
+                    <a href="#" class="flex py-2.5 px-4 text-white rounded transition duration-200 hover:bg-blue-400">
+                        <span>
+                            <img src="resources/img/settings.png" alt="" class="h-6 mr-1">
+                        </span>
+                        Configuración
+                    </a>
+                </nav>
+            </div>
+            <div>
+                <a href="#" class="flex py-2.5 px-4 rounded text-white transition duration-200 hover:bg-blue-400">
+                    <span>
+                        <img src="resources/img/logout.png" alt="" class="h-6 mr-2">
+                    </span>
+                    Cerrar
+                    sesión
+                </a>
+            </div>
+        </aside>
+
+        <main class="flex-1 p-6">
+            <header class="mb-6">
+                <h1 class="text-3xl font-semibold">Dashboard</h1>
+            </header>
+
+            <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h2 class="text-xl font-semibold mb-4">Ventas Totales</h2>
+                    <p class="text-gray-700 text-3xl"><span class="text-green-600">$</span>24000</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h2 class="text-xl font-semibold mb-4">Nuevos Pedidos</h2>
+                    <p class="text-gray-700 text-3xl">120</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h2 class="text-xl font-semibold mb-4">Nuevos Clientes</h2>
+                    <p class="text-gray-700 text-3xl">75</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h2 class="text-xl font-semibold mb-4">Productos Disponibles</h2>
+                    <p class="text-gray-700 text-3xl">200</p>
+                </div>
+            </section>
+
+            <section class="bg-white p-6 rounded-lg shadow-lg mb-6">
+                <h2 class="text-2xl font-semibold mb-4">Pedidos Recientes</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left table-auto">
+                        <thead>
+                            <tr>
+                                <th class="px-4 py-2">ID Pedido</th>
+                                <th class="px-4 py-2">Cliente</th>
+                                <th class="px-4 py-2">Producto</th>
+                                <th class="px-4 py-2">Cantidad</th>
+                                <th class="px-4 py-2">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border px-4 py-2">001</td>
+                                <td class="border px-4 py-2">Juan Perez</td>
+                                <td class="border px-4 py-2">Camiseta</td>
+                                <td class="border px-4 py-2">2</td>
+                                <td class="border px-4 py-2"><span class="text-green-600">$</span>40</td>
+                            </tr>
+                            <tr>
+                                <td class="border px-4 py-2">002</td>
+                                <td class="border px-4 py-2">Ana Lopez</td>
+                                <td class="border px-4 py-2">Pantalón</td>
+                                <td class="border px-4 py-2">1</td>
+                                <td class="border px-4 py-2"><span class="text-green-600">$</span>60</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold mb-4">Reseñas de Clientes</h2>
+                <div>
+                    <p class="mb-4">"Excelente servicio y productos de calidad" - <span class="font-bold">Maria Gonzalez</span></p>
+                    <p class="mb-4">"Muy satisfecho con mi compra" - <span class="font-bold">Pedro Martinez</span></p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>
